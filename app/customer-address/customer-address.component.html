@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Address</title>
+</head>
+<body style="background-color: rgba(0,0,0,.2);">
+
+
+    <div>
+        <form #form1="ngForm" (ngSubmit)="getvalue(form1.value)">
+        <table  align="center" style="color:black">
+            
+            <tr><th colspan="2" style="text-align:center"><h3><b>CUSTOMER ADDRESS</b></h3></th></tr>
+            <tr>
+                <th class="t"><label for="ad">ADDRESS:</label></th><td><input ngModel type="text" name="ad" id="ad" placeholder="--Enter Address--"></td>
+            </tr>
+            
+            <tr>
+                <th  class="t"><label for="city">CITY:</label></th><td><input ngModel type="text" name="city" id="city" placeholder="--Enter City--"></td>
+            </tr>
+            <tr>
+                <th  class="t"><label for="state">STATE:</label></th> <td><input ngModel type="text" name="state" id="state" placeholder="--Enter State--"></td>
+            </tr>
+            <tr>
+                <th  class="t"><label for="pd">ZIP-CODE:</label></th> <td><input ngModel type="text" name="pd" id="pd" placeholder="--Enter Zip Code--"></td>
+
+            </tr>
+            
+
+            <tr>
+               <th colspan="2"><input type="submit" id="btn" value="submit"></th>  
+
+            </tr>
+
+        </table>
+        </form>
+
+    </div>
+    
+</body>
+</html>
