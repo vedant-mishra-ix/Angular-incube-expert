@@ -1,0 +1,32 @@
+<h1 style="text-align: center;">Hello Moto what are you doing ?  {{title}} :::: </h1>    
+
+<!-- this is example of interpolation {{}}-->
+
+  <!-- this is a example of property binding -->
+<img [src]="imagefound" alt="not found" /> <span>Image set with the help of property binding</span>
+<br><br><br>
+
+<button [disabled]="perform">Click me</button>
+<br>
+<br>
+<input  type="text" [value]="inputvalue" [disabled]="perform"  /> <span>Disable button through property binding</span>
+<br><br>
+
+
+
+
+   <!-- this is  a example of event binding with dom -->
+
+<input type="text" #inp />
+<input type="text" #inp1 />
+
+<button (click)="act(inp.value , inp1.value)">Click Me</button> <span>value get in console</span> 
+
+<br><br><br>
+
+
+   <!-- this is a example of Two-way-binding -->
+
+<input type="text" [(ngModel)]="username" />
+
+<h1>Value of ngModel {{username}}</h1>
